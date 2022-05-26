@@ -205,12 +205,17 @@ a::after {
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
     color: #fff;
+    box-shadow: 1px 2px rgba(0,0,0,0.2);
 }
 
 .contact-btn:hover {
-    margin-bottom: 2%;
-    border-bottom: 5px solid rgba(0,0,0,0.3);
     cursor: pointer;
+}
+
+.contact-btn:active {
+    position: relative;
+    top: 2px;
+    box-shadow: none;
 }
 
 /* CONTENT SECTIONS */
@@ -234,7 +239,7 @@ a::after {
 .detail-grid {
     display: grid;
     grid-template-areas: "one two"
-                         "three four";
+                        "three four";
     margin: 2% 0;
 }
 
