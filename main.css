@@ -186,8 +186,8 @@ a::after {
     animation: typing 2.5s steps(50, end) forwards, blink 0.8s infinite;
     width: 30%;
 }
-  
-  @keyframes typing {
+
+@keyframes typing {
     from { width: 0 }
     to { width: 100% }
 }
@@ -275,10 +275,6 @@ a::after {
     padding: 1.5% 0 2% 6%;
 }
 
-.detail-info-large:hover {
-    background-color: rgba(5,125,230,0.6);
-}
-
 .education-text {
     padding: 2% 3% 0 3%;
 }
@@ -311,7 +307,8 @@ a::after {
 }
 
 .detail-info-med:hover {
-    background-color: rgba(5,125,230,0.6);
+    background-color: rgba(5,125,230,0.1);
+    cursor: pointer;
 }
 
 .detail-info-med:hover .hidden-on-git {
@@ -338,6 +335,10 @@ a::after {
     padding: 2% 2% 0 2%;
 }
 
+.sub-text {
+    color: rgba(255, 255, 255, 0.75);
+}
+
 
 .hidden-on-git {
     visibility: hidden;
@@ -357,7 +358,7 @@ a::after {
     color: rgba(255, 255, 255, 0.75);
     display: grid;
     grid-template-areas: "list-one list-two"
-                         "list-three list-four";
+                        "list-three list-four";
 }
 
 .project-list-item {
