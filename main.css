@@ -361,10 +361,7 @@ a::after {
 
 /* CONTACT CARD */
 .contact-card {
-    border-top: 0.5rem solid rgba(5,125,230,0.8);
-    border-right: 0.8rem solid rgba(5,125,230,0.8);
-    border-bottom: 0.5rem solid rgba(5,125,230,0.8);
-    border-left: 0.1rem solid rgba(5,125,230,0.8);
+    border: 0.5rem solid rgba(5,125,230,0.8);
     background-color: rgba(5,125,230,0.4);
     border-radius: 20px;
     color: rgba(5,125,230,0.8);
