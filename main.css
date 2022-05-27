@@ -10,6 +10,7 @@
     justify-content: space-around;
 }
 
+/* Main Color */
 :root {
     --main-color: rgba(5,125,230,0.8);
     scroll-behavior: smooth;
@@ -33,7 +34,7 @@
     margin: 0 0 2% 0;
     padding: 1.5% 2%;
     border-radius: 50px 50px 50px 50px;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     z-index: 2;
 }
 
@@ -204,7 +205,7 @@ a::after {
     border-radius: 40px;
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
-    color: #fff;
+    color: rgb(255, 255, 255);
     box-shadow: 1px 2px rgba(0,0,0,0.2);
 }
 
@@ -216,6 +217,11 @@ a::after {
     position: relative;
     top: 2px;
     box-shadow: none;
+}
+
+.contact-btn-text {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 /* CONTENT SECTIONS */
@@ -440,9 +446,9 @@ a::after {
 }
 
 
-/* QUERIES */
+/* MEDIA QUERIES */
 
-
+/* QUERY */
 /* 1200px */
 @media only screen and (max-width: 1200px) {
     .fixed-header {
@@ -459,8 +465,9 @@ a::after {
 }
 
 
-/* 900px */
-@media only screen and (max-width: 900px) {
+/* QUERY */
+/* 915px */
+@media only screen and (max-width: 915px) {
     .body-container {
         display: flex;
         flex-direction: column;
@@ -477,6 +484,7 @@ a::after {
 
     .fixed-header {
         justify-content: space-between;
+        align-self: center;
         width: 90%;
         z-index: 10;
         position: fixed;
@@ -518,16 +526,16 @@ a::after {
     .mobile-top-image {
         visibility: visible;
         width: 100%;
-        min-height: 440px;
-        max-height: 720px;
+        max-height: 700px;
     }
 }
 
 
+/* QUERY */
 /* 600px */
 @media only screen and (max-width: 600px) {
     .logo {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     .fixed-header {
@@ -562,7 +570,15 @@ a::after {
     .mobile-top-image {
         visibility: visible;
         padding-left: 0;
-        min-height: 440px;
+        max-height: 500px;
+    }
+
+}
+
+/* TINY PHONES */
+@media only screen and (max-width: 380px) {
+    .mobile-top-image {
+        max-height: 400px;
     }
 
 }
