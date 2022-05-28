@@ -195,8 +195,15 @@ a::after {
 
 
 /* CONTACT ME BUTTON */
+.home-btn-container {
+    margin-top: 5%;
+}
+
 .contact-me-button {
-    margin: 5% auto;
+    margin: 5% 5% 5% 0;
+    display: flex;
+    flex-direction: row;
+    display: inline;
 }
 
 .contact-btn {
@@ -268,7 +275,7 @@ a::after {
 }
 
 .freelance {
-    color: rgb(255, 90, 90);
+    color: rgb(175, 0, 0);
     font-weight: 700;
 }
 
@@ -309,72 +316,45 @@ a::after {
 /* PORTFOLIO */
 .detail-info-med {
     background-color: rgba(5,125,230,0.8);
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 1% 2%;;
-    margin: 3% 0;
+    margin: 1% 5% 3% 0;
     border-radius: 20px;
     width: clamp(50%, 80%, 90%);
-    align-content: center;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .detail-info-med:hover {
-    background-color: rgba(5,125,230,0.1);
+    background-color: rgba(5,125,230);
     cursor: pointer;
 }
 
-.detail-info-med:hover .hidden-on-git {
-    visibility: visible;
-    cursor: pointer;
-    left: clamp(3%, 3%, 5%);
+.portfolio-flex {
+    display: flex;
+    flex-direction: row;
 }
 
-.detail-info-med:hover a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.75);
-}
-
-.detail-info-med:hover a:hover {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.75);
-}
-
-.detail-info-med:hover a:hover .arrows {
-    visibility: visible;
-}
-
-.portfolio-text {
-    font-size: 1.15rem;
+.portfolio-title {
+    font-size: 1.25rem;
     padding: 2% 2% 0 2%;
 }
 
-.sub-text {
-    color: rgba(255, 255, 255, 0.75);
+.portfolio-text {
+    font-size: 0.8rem;
+    padding: 4% 3%;
 }
 
-
-.hidden-on-git {
-    visibility: hidden;
-    font-size: 0.7rem;
-    justify-content: flex-end;
-    padding: 2% 0 0 0;
-    margin-left: 3%;
-    color: rgba(255, 255, 255, 0.75);
+.portfolio-img {
+    max-height: 10rem;
+    min-width: 100%;
+    border-radius: 20px 20px 5px 5px;
 }
 
-.arrows {
-    visibility: hidden;
-}
-
-.project-list {
-    padding: 1.5% 0 0 3%;
-    color: rgba(255, 255, 255, 0.75);
-    display: grid;
-    grid-template-areas: "list-one list-two"
-                        "list-three list-four";
-}
-
-.project-list-item {
-    font-size: 0.75rem;
+.tech-list {
+    margin-left: 8%;
+    font-size: 0.9rem;
+    padding: 3% 0;
 }
 
 /* CONTACT CARD */
@@ -413,14 +393,13 @@ a::after {
 
 /* SOCIAL SIDEBAR */
 .social-sidebar {
-    border-left: 1px solid var(--main-color);
     width: 5%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: clamp(5%, 7%, 10%);
+    padding-top: 6.5%;
     background-color: var(--main-color);
     color: #fff;
 }
@@ -609,16 +588,10 @@ a::after {
         padding: 1.5% 0 2% 6%;
     }
 
-    .project-list {
-        display: grid;
-        grid-template-areas: "list-one"
-                            "list-two"
-                            "list-three" 
-                            "list-four";
-        margin-left: 4%;
-        margin-bottom: 2%;
+    .portfolio-flex {
+        display: flex;
+        flex-direction: column;
     }
-
     .contact-card {
         width: 80%;
     }
