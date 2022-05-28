@@ -401,7 +401,7 @@ a::after {
     border-radius: 20px;
     color: rgba(5,125,230,0.8);
     padding: 2% 3%;
-    min-width: 45%;
+    width: 45%;
     margin-top: 5%;
 }
 
@@ -553,6 +553,10 @@ a::after {
         font-weight: 300;
     }
 
+    .contact-card {
+        width: 50%;
+    }
+
     .social-sidebar {
         width: 100%;
         flex-direction: row;
@@ -623,6 +627,9 @@ a::after {
 
     .detail-info-large .edu-list {
         padding: 1.5% 0 2% 6%;
+    }
+    .contact-card {
+        max-width: 75%;
     }
 
     .portfolio-flex {
