@@ -172,6 +172,10 @@ a::after {
     font-size: 15px;
 }
 
+.width100 {
+    width: 100%;
+}
+
 
 /* TYPING EFFECT */
 .typed-container {
@@ -349,6 +353,10 @@ a::after {
     max-height: 10rem;
     min-width: 100%;
     border-radius: 20px 20px 5px 5px;
+}
+
+.border {
+    border: 1px solid black;
 }
 
 .tech-list {
