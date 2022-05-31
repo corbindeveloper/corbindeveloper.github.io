@@ -2,7 +2,7 @@
 
 - [X] 100% Mobile Friendly
 - [X] Portfolio Cards
-- [] Education Dropdowns
+- [X] Education Dropdowns
 - [] Download Resume Button
 - [] Final Font Tweaking
 
