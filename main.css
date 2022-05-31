@@ -283,38 +283,64 @@ a::after {
     font-weight: 700;
 }
 
-/* EDUCATION */
-.detail-info-large {
-    background-color: rgba(5,125,230,0.8);
-    color: #fff;
-    padding: 1% 0 1% 4%;
-    margin: 3% 0;
-    border-radius: 20px;
-    width: clamp(50%, 80%, 90%);
-    align-content: center;
+/* EDUCATION DROP DOWNS */
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
 }
 
-.detail-info-large .edu-list {
-    padding: 1.5% 0 2% 6%;
+.edu-card-container {
+    margin-bottom: 3%;
 }
 
-.education-text {
-    padding: 2% 3% 0 3%;
+.edu-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: rgb(248,248,248);
+    border-bottom: var(--main-color) 2px solid;
 }
 
-.school-text {
-    padding: 0 0 0 2%;
+.institution {
+    min-width: 80%;
+}
+
+.edu-chevron {
+    height: 2rem;
+    width: 2rem;
+}
+
+.edu-chevron:hover {
+    cursor: pointer;
+}
+
+.edu-chevron:active {
+    position: relative;
+    top: 1.5px;
+}
+
+.edu-description {
+    background-color: var(--main-color);
+    color: white;
+    padding: 2% 3%;
+    display: none;
+}
+
+.edu-description-text > li {
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 1% 0;
+    list-style: none;
     font-size: 0.85rem;
 }
 
-.edu-list {
-    padding: 1.5% 0 0 6%;
-    color: rgba(255, 255, 255, 0.75);
-    display: grid;
-}
-
-.edu-list-item {
-    font-size: 0.75rem;
+.year {
+    padding-left: 1%;
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.5);
 }
 
 /* PORTFOLIO */

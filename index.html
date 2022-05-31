@@ -67,7 +67,7 @@
                 <p class="content-text-style-2">Currently an active student at Coding Dojo. <br><br>
                 My journey in tech and entrepreneurship went full swing when I decided to launch a mobile device repair business in my rural Kansas town. <br>
                 I graduated high school and found myself studying cyber security, here I learned how to utilize security services such as Wireshark, Metasploit, Nmap, ect. <br>
-                Security is fun but my passion in software. I love to create to fulfill both my own and others business aspirations. Whether it's a mobile game or a large scale application
+                Security is fun but my passion is in software. I love to create to fulfill both my own and others business aspirations. Whether it's a mobile game or a large scale application
                 I love to bring ideas to life.</p>
                 <br>
                 <p class="content-text-style-1 width100">It's very hard to find me away from a computer but when you do it's usually my dogs and nature calling. </p>
@@ -87,47 +87,71 @@
                     </div>
                 </div>
             </div>
-            <!-- EDUCATION -->
+            
+            <!-- EDUCATION DROP DOWN  -->
             <div class="body-content">
                 <h1 class="content-heading" id="edu">Education</h1>
                 <p class="content-text-style-2"></p>
-
-                <div class="detail-grid">
-                    <div class="detail-info-large one">
-                        <p class="detail-text education-text">2013-2016</p>
-                        <p class="school-text">Hoisington High School</p>
-                        <ul class="edu-list">
-                            <li class="edu-list-item">Early Graduate</li>
-                            <li class="edu-list-item">Chamber of Commerce Delegate</li>
-                        </ul>
+                <!-- CODING DOJO -->
+                <div class="dropdown-container">
+                    <div class="edu-card-container">
+                        <div class="edu-card">
+                            <p class="institution">Coding Dojo <span class="year">( 2022 )</span></p>
+                            <img src="./img/chevron-down-solid.svg" alt="Dropdown" class="edu-chevron" onclick="dropdown()">
+                        </div>
+                        <div class="edu-description" id="one">
+                            <ul class="edu-description-text">
+                                <li class="edu-descrition-item">Aspiring for triple black belt, the highest honors for graduation.</li>
+                                <li class="edu-descrition-item">Full-time immersive program requiring 70-90hrs week, consistently ahead and assisting cohort mates.</li>
+                                <li class="edu-descrition-item">Front-End JavaScript // Python // MERN // C# </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="detail-info-large two">
-                        <p class="detail-text education-text">2017-2019</p>
-                        <p class="school-text">Colorado Tech University</p>
-                        <ul class="edu-list">
-                            <li class="edu-list-item">Cyber Security</li>
-                            <li class="edu-list-item">Concentration: Computer Systems</li>
-                        </ul>
+                    <!-- CODECADEMY -->
+                    <div class="edu-card-container">
+                        <div class="edu-card">
+                            <p class="institution">Codecademy <span class="year">( 2022 )</span></p>
+                            <img src="./img/chevron-down-solid.svg" alt="Dropdown" class="edu-chevron" onclick="dropdownTwo()">
+                        </div>
+                        <div class="edu-description" id="two">
+                            <ul class="edu-description-text">
+                                <li class="edu-descrition-item">HTML5 Certified</li>
+                                <li class="edu-descrition-item">CSS3 Certified</li>
+                                <li class="edu-descrition-item">Navigation Designs Certified</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="detail-info-large three">
-                        <p class="detail-text education-text">2022</p>
-                        <p class="school-text">CodeCademy</p>
-                        <ul class="edu-list">
-                            <li class="edu-list-item">HTML5 Certified</li>
-                            <li class="edu-list-item">CSS3 Certified</li>
-                        </ul>
+                    <!-- COLLEGE -->
+                    <div class="edu-card-container">
+                        <div class="edu-card">
+                            <p class="institution">Colorado Tech University <span class="year">( 2017-2019 )</span></p>
+                            <img src="./img/chevron-down-solid.svg" alt="Dropdown" class="edu-chevron" onclick="dropdownThree()">
+                        </div>
+                        <div class="edu-description" id="three">
+                            <ul class="edu-description-text">
+                                <li class="edu-descrition-item">Studied cybersecurity with a concentration in computer systems security.</li>
+                                <li class="edu-descrition-item">Learned to utilize tools such as metasploit, wireshark, nMap, ect.. </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="detail-info-large four">
-                        <p class="detail-text education-text">2022</p>
-                        <p class="school-text">Coding Dojo</p>
-                        <ul class="edu-list">
-                            <li class="edu-list-item">Full-Stack Student</li>
-                            <!-- <li class="edu-list-item"></li> -->
-                        </ul>
-                        <span id="portfolio"></span>
+                    <!-- HIGH SCHOOL -->
+                    <div class="edu-card-container">
+                        <div class="edu-card">
+                            <p class="institution">Hoisington High School <span class="year">( 2013-2016 )</span></p>
+                            <img src="./img/chevron-down-solid.svg" alt="Dropdown" class="edu-chevron" onclick="dropdownFour()">
+                        </div>
+                        <div class="edu-description" id="four">
+                            <ul class="edu-description-text">
+                                <li class="edu-descrition-item">Early Graduate </li>
+                                <li class="edu-descrition-item">Chamber of Commerce Delegate</li>
+                                <li class="edu-descrition-item">School President and Link Crew President</li>
+                                <li class="edu-descrition-item">4.0 GPA</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+ 
             <!-- PORTFOLIO -->
             <div class="body-content portfolio-content">
                 <h1 class="content-heading portfolio-heading" id="portfolio">Portfolio</h1>
@@ -190,10 +214,11 @@
         <!-- Social Side Bar -->
         <div class="social-sidebar">
             <a href="https://github.com/corbindeveloper"><img src="./img/GitHub.png" alt="GH" ></a>
-            <a href="https://www.codecademy.com/profiles/corbin.developer" id="codeCademy"><img src="./img/icons8-code-ios-glyph/icons8-code-60.png" alt=CA" class="codeCademy"></a>
+            <a href="https://www.codecademy.com/profiles/corbin.developer" id="codeCademy"><img src="./img/icons8-code-ios-glyph/icons8-code-60.png" alt="CA" class="codeCademy"></a>
         </div>
         <span class="credit-bottom social-sidebar"><strong> &copy; </strong> &nbsp; Corbin Crawford. All Rights Rerserved.</span>
 
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
