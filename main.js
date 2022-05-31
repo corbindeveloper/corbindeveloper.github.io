@@ -9,7 +9,7 @@ var cardThree = document.getElementById('cardThree');
 var cardFour = document.getElementById('cardFour');
 
 cardOne.addEventListener("click", function(){
-   if(codingDojo.style.display == "" || codingDojo.style == "none") {
+   if(codingDojo.style.display !== "block") {
       codingDojo.style.display  = "block";
    } else {
       codingDojo.style.display = "none";
@@ -17,7 +17,7 @@ cardOne.addEventListener("click", function(){
 });
 
 cardTwo.addEventListener("click", function(){
-   if(codecademy.style.display == "" || codecademy.style.display == "none") {
+   if(codecademy.style.display !== "block") {
       codecademy.style.display  = "block";
    } else {
       codecademy.style.display = "none";
@@ -25,7 +25,7 @@ cardTwo.addEventListener("click", function(){
 });
 
 cardThree.addEventListener("click", function(){
-   if(ctu.style.display == "" || ctu.style.display == "none") {
+   if(ctu.style.display !== "block") {
       ctu.style.display  = "block";
    } else {
       ctu.style.display = "none";
@@ -33,9 +33,10 @@ cardThree.addEventListener("click", function(){
 });
 
 cardFour.addEventListener("click", function(){
-   if(hhs.style.display == "" || hhs.style.display == "none") {
+   if(hhs.style.display !== "block") {
       hhs.style.display  = "block";
    } else {
       hhs.style.display = "none";
    }
 });
+
