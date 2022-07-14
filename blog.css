@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+body {
+    background-color: rgba(5,125,230,0.8);;
+}
+
+#blog-header {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 5% 2% 5%;
+    padding: 1.5% 2%;
+}
+
+#blog-header > ul {
+    width: 50%;
+}
